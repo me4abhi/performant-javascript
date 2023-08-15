@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.search-box {
+  text-align: center;
+  margin: 1em;
+}
+input {
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 0.7em;
+  border-radius: 10px;
+  border: 0;
+}
+
+a.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+.post {
+  background-color: #343434;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 10px;
+}
+.post .post-title {
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.post .post-body {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 1.5em;
+  padding: 1em 0;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 0.5em #f7df1eaa);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
